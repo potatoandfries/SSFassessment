@@ -1,0 +1,30 @@
+[
+	{ 
+		"eventId": 1,
+		"eventName": "Christmas Eve Party",
+		"eventSize": 20,
+		"eventDate": 1703415600000,
+		"participants": 0
+	},
+	{
+		"eventId": 2,
+		"eventName": "Round Singapore Cycling",
+		"eventSize": 5,
+		"eventDate": 1702857600000,
+		"participants": 0
+	},
+	{
+		"eventId": 3,
+		"eventName": "Intro to SCRATCH",
+		"eventSize": 5,
+		"eventDate": 1704502800000,
+		"participants": 0
+	},
+	{
+		"eventId": 4,
+		"eventName": "JB Shopping !",
+		"eventSize": 5,
+		"eventDate": 1699837200000,
+		"participants": 0
+	}
+]

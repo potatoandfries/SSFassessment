@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Of Events</title>
+</head>
+<body>
+    <h1>List Of Events</h1>
+    <hr>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Event ID</th>
+                <th>Event Name</th>
+                <th>Event Size</th>
+                <th>Event Date</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="evt: ${events}">
+                <td th:text="${evt.eventId}"></td>
+                <td th:text="${evt.eventName}"></td>
+                <td th:text="${evt.eventSize}"></td>
+                <td th:text="${#dates.format(evt.eventDate, 'yyyy-MM-dd HH:mm:ss')}"></td>
+                <td>
+                    <a th:href="@{'/register/'+${evt.eventId}}" class="btn btn-secondary">Register</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
